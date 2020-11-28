@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 NonBlocking=true
-WorkingDirectory=/opt
-ExecStart=/opt/zmp-linux-amd64 --best --rosnd http://immo.date/ero.m3u --loglevel off
+WorkingDirectory=/zmp
+ExecStart=/zmp/zmp-linux-amd64 --best --rosnd http://immo.date/ero.m3u --loglevel off
 ExecStop=/usr/bin/killall -w zmp-linux-amd64
 Restart=on-failure
 RestartSec=10s
