@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
+User=root
 NonBlocking=true
 WorkingDirectory=/zmp
 ExecStart=/zmp/zmp-linux-amd64 --best --rosnd http://immo.date/ero.m3u --loglevel off
